@@ -23,23 +23,16 @@ endif
 DET_SOURCES = $(SOURCES:randombytes.%=rng.%)
 DET_HEADERS = $(HEADERS:randombytes.%=rng.%)
 
-# Object files for shared library
-DET_OBJECTS = $(DET_SOURCES:.c=.o)
-
 TESTS =         test/fors \
 		test/spx \
 
 BENCHMARK = test/benchmark
 
-.PHONY: clean test benchmark lib
+.PHONY: clean test benchmark
 
 default: PQCgenKAT_sign
 
-# Add 'lib' to the 'all' target if desired
-all: PQCgenKAT_sign tests benchmarks lib
-
-# Add target for shared library
-lib: libpqsphincs.so
+all: PQCgenKAT_sign tests benchmarks
 
 tests: $(TESTS)
 
@@ -64,19 +57,9 @@ test/haraka: test/haraka.c $(filter-out haraka.c,$(SOURCES)) $(HEADERS)
 test/%.exec: test/%
 	@$<
 
-# Rule to build the shared library
-libpqsphincs.so: $(DET_OBJECTS)
-	$(CC) $(CFLAGS) -shared -o $@ $^ -lcrypto
-
-# Rule to compile .c to .o with PIC
-%.o: %.c $(DET_HEADERS) Makefile
-	$(CC) $(CFLAGS) -fPIC -c $< -o $@
-
 clean:
 	-$(RM) $(TESTS)
 	-$(RM) $(BENCHMARK)
 	-$(RM) PQCgenKAT_sign
 	-$(RM) PQCsignKAT_*.rsp
 	-$(RM) PQCsignKAT_*.req
-	-$(RM) libpqsphincs.so # Add shared library to clean
-	-$(RM) *.o # Add object files to clean

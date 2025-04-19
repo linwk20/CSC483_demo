@@ -1,11 +1,54 @@
-## SPHINCS+
+## Demo for SPHINCS+ 🚀 CSC 483
 
-This repository contains the software that accompanies the [SPHINCS+ submission](https://sphincs.org/) to [NIST's Post-Quantum Cryptography](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography) project.
+This repository is based on code from the [SPHINCS+ reference implementation](https://github.com/sphincs/sphincsplus) which contains the software that accompanies the [SPHINCS+ submission](https://sphincs.org/) to [NIST's Post-Quantum Cryptography](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography) project.
 
 ![][test-ref]
 ![][test-sha256-avx2]
 ![][test-shake256-avx2]
 ![][test-haraka-aesni]
+
+
+
+
+### Benchmarking Performance and Size 📊
+
+To test different parameter configurations and measure performance:
+
+```bash
+cp Makefile_orig ./ref/Makefile
+python3 benchmark.py > benchmark_result.txt
+```
+
+This will generate detailed benchmarks with various parameters and save the results to `benchmark_result.txt` for analysis.
+
+### Security and Functionality Testing 🔐
+
+To test the security aspects and core functionality:
+
+
+Please first run make to compile the library.
+
+```bash
+cp Makefile_lib ./ref/Makefile
+make -C ref lib PARAMS=sphincs-shake-128s THASH=simple
+```
+Then run the demo using jupyter notebook 
+[sphincs_demo.ipynb](sphincs_demo.ipynb).
+
+
+or run all cells in the notebook if you're using JupyterLab or another Jupyter interface.
+
+---
+
+Happy experimenting with SPHINCS+! 🌟
+
+
+
+
+<br>
+
+
+## Original README
 
 ### Parameters
 
@@ -35,3 +78,5 @@ see the [LICENSE file](LICENSE) and the licenses in the [LICENSES folder](LICENS
 [test-sha256-avx2]: https://github.com/sphincs/sphincsplus/actions/workflows/test-sha256-avx2.yml/badge.svg
 [test-shake256-avx2]: https://github.com/sphincs/sphincsplus/actions/workflows/test-shake256-avx2.yml/badge.svg
 [test-haraka-aesni]: https://github.com/sphincs/sphincsplus/actions/workflows/test-haraka-aesni.yml/badge.svg
+
+

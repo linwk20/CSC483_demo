@@ -7,14 +7,14 @@ from subprocess import DEVNULL, run
 
 implementations = [
                    ('ref', ['shake', 'sha2', 'haraka']),
-                   ('haraka-aesni', ['haraka']),
-                   ('shake-avx2', ['shake']),
-                   ('sha2-avx2', ['sha2']),
+                #    ('haraka-aesni', ['haraka']),
+                #    ('shake-avx2', ['shake']),
+                #    ('sha2-avx2', ['sha2']),
                    ]
 
 options = ["f", "s"]
-sizes = [128, 192, 256]
-thashes = ['robust', 'simple']
+sizes = [128, 192,]
+thashes = [ 'simple']
 
 for impl, fns in implementations:
     params = os.path.join(impl, "params.h")

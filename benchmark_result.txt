@@ -1,0 +1,192 @@
+Benchmarking sphincs-shake-128f simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+thash                avg.        0.34 us (0.00 sec); median          1,185 cycles,      1x:          1,185 cycles
+Generating keypair.. avg.     1358.13 us (0.00 sec); median      5,130,931 cycles,      1x:      5,130,931 cycles
+  - WOTS pk gen..    avg.      175.96 us (0.00 sec); median        636,234 cycles,      8x:      5,089,872 cycles
+Signing..            avg.    32279.07 us (0.03 sec); median    121,824,503 cycles,      1x:    121,824,503 cycles
+  - FORS signing..   avg.     1941.61 us (0.00 sec); median      7,224,845 cycles,      1x:      7,224,845 cycles
+  - WOTS pk gen..    avg.      190.46 us (0.00 sec); median        637,697 cycles,    176x:    112,234,672 cycles
+Verifying..          avg.     1925.53 us (0.00 sec); median      7,262,256 cycles,      1x:      7,262,256 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-shake-192f simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+thash                avg.        0.33 us (0.00 sec); median          1,123 cycles,      1x:          1,123 cycles
+Generating keypair.. avg.     1999.26 us (0.00 sec); median      7,531,904 cycles,      1x:      7,531,904 cycles
+  - WOTS pk gen..    avg.      249.28 us (0.00 sec); median        936,947 cycles,      8x:      7,495,576 cycles
+Signing..            avg.    52179.43 us (0.05 sec); median    197,369,587 cycles,      1x:    197,369,587 cycles
+  - FORS signing..   avg.     7727.16 us (0.01 sec); median     29,115,125 cycles,      1x:     29,115,125 cycles
+  - WOTS pk gen..    avg.      248.58 us (0.00 sec); median        937,707 cycles,    176x:    165,036,432 cycles
+Verifying..          avg.     2866.49 us (0.00 sec); median     10,670,894 cycles,      1x:     10,670,894 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-shake-128s simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+thash                avg.        0.33 us (0.00 sec); median          1,146 cycles,      1x:          1,146 cycles
+Generating keypair.. avg.    88566.09 us (0.09 sec); median    336,031,605 cycles,      1x:    336,031,605 cycles
+  - WOTS pk gen..    avg.      169.53 us (0.00 sec); median        636,006 cycles,    512x:    325,635,072 cycles
+Signing..            avg.   679270.70 us (0.68 sec); median  2,567,635,291 cycles,      1x:  2,567,635,291 cycles
+  - FORS signing..   avg.    53550.63 us (0.05 sec); median    201,261,849 cycles,      1x:    201,261,849 cycles
+  - WOTS pk gen..    avg.      170.90 us (0.00 sec); median        639,616 cycles,   3584x:  2,292,383,744 cycles
+Verifying..          avg.      654.81 us (0.00 sec); median      2,494,453 cycles,      1x:      2,494,453 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-shake-192s simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+thash                avg.        0.37 us (0.00 sec); median          1,131 cycles,      1x:          1,131 cycles
+Generating keypair.. avg.   131264.71 us (0.13 sec); median    491,263,086 cycles,      1x:    491,263,086 cycles
+  - WOTS pk gen..    avg.      254.88 us (0.00 sec); median        933,641 cycles,    512x:    478,024,192 cycles
+Signing..            avg.  1167525.98 us (1.17 sec); median  4,428,499,901 cycles,      1x:  4,428,499,901 cycles
+  - FORS signing..   avg.   256807.67 us (0.26 sec); median    974,663,957 cycles,      1x:    974,663,957 cycles
+  - WOTS pk gen..    avg.      250.96 us (0.00 sec); median        934,648 cycles,   3584x:  3,349,778,432 cycles
+Verifying..          avg.      910.60 us (0.00 sec); median      3,451,502 cycles,      1x:      3,451,502 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-sha2-128f simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+thash                avg.        0.22 us (0.00 sec); median            736 cycles,      1x:            736 cycles
+Generating keypair.. avg.      921.93 us (0.00 sec); median      3,367,028 cycles,      1x:      3,367,028 cycles
+  - WOTS pk gen..    avg.      111.89 us (0.00 sec); median        406,068 cycles,      8x:      3,248,544 cycles
+Signing..            avg.    20708.73 us (0.02 sec); median     78,277,663 cycles,      1x:     78,277,663 cycles
+  - FORS signing..   avg.     1199.17 us (0.00 sec); median      4,531,367 cycles,      1x:      4,531,367 cycles
+  - WOTS pk gen..    avg.      109.12 us (0.00 sec); median        410,020 cycles,    176x:     72,163,520 cycles
+Verifying..          avg.     1281.02 us (0.00 sec); median      4,828,413 cycles,      1x:      4,828,413 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-sha2-192f simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+thash                avg.        0.21 us (0.00 sec); median            695 cycles,      1x:            695 cycles
+Generating keypair.. avg.     1185.26 us (0.00 sec); median      4,336,123 cycles,      1x:      4,336,123 cycles
+  - WOTS pk gen..    avg.      141.70 us (0.00 sec); median        534,527 cycles,      8x:      4,276,216 cycles
+Signing..            avg.    31269.89 us (0.03 sec); median    118,826,863 cycles,      1x:    118,826,863 cycles
+  - FORS signing..   avg.     5716.19 us (0.01 sec); median     21,269,683 cycles,      1x:     21,269,683 cycles
+  - WOTS pk gen..    avg.      141.97 us (0.00 sec); median        533,824 cycles,    176x:     93,953,024 cycles
+Verifying..          avg.     1680.76 us (0.00 sec); median      6,340,357 cycles,      1x:      6,340,357 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-sha2-128s simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+thash                avg.        0.21 us (0.00 sec); median            693 cycles,      1x:            693 cycles
+Generating keypair.. avg.    51267.97 us (0.05 sec); median    194,322,024 cycles,      1x:    194,322,024 cycles
+  - WOTS pk gen..    avg.       97.88 us (0.00 sec); median        367,080 cycles,    512x:    187,944,960 cycles
+Signing..            avg.   391379.83 us (0.39 sec); median  1,482,729,810 cycles,      1x:  1,482,729,810 cycles
+  - FORS signing..   avg.    33160.10 us (0.03 sec); median    125,088,932 cycles,      1x:    125,088,932 cycles
+  - WOTS pk gen..    avg.       97.99 us (0.00 sec); median        370,272 cycles,   3584x:  1,327,054,848 cycles
+Verifying..          avg.      364.37 us (0.00 sec); median      1,371,458 cycles,      1x:      1,371,458 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-sha2-192s simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+thash                avg.        0.19 us (0.00 sec); median            664 cycles,      1x:            664 cycles
+Generating keypair.. avg.    74320.96 us (0.07 sec); median    281,657,881 cycles,      1x:    281,657,881 cycles
+  - WOTS pk gen..    avg.      143.40 us (0.00 sec); median        538,897 cycles,    512x:    275,915,264 cycles
+Signing..            avg.   708246.20 us (0.71 sec); median  2,685,187,863 cycles,      1x:  2,685,187,863 cycles
+  - FORS signing..   avg.   186915.15 us (0.19 sec); median    707,841,049 cycles,      1x:    707,841,049 cycles
+  - WOTS pk gen..    avg.      175.92 us (0.00 sec); median        539,467 cycles,   3584x:  1,933,449,728 cycles
+Verifying..          avg.      559.07 us (0.00 sec); median      2,081,564 cycles,      1x:      2,081,564 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-haraka-128f simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+thash                avg.        0.37 us (0.00 sec); median          1,278 cycles,      1x:          1,278 cycles
+Generating keypair.. avg.     1568.46 us (0.00 sec); median      5,904,668 cycles,      1x:      5,904,668 cycles
+  - WOTS pk gen..    avg.      201.36 us (0.00 sec); median        726,066 cycles,      8x:      5,808,528 cycles
+Signing..            avg.    38821.35 us (0.04 sec); median    145,883,862 cycles,      1x:    145,883,862 cycles
+  - FORS signing..   avg.     3638.03 us (0.00 sec); median     13,415,407 cycles,      1x:     13,415,407 cycles
+  - WOTS pk gen..    avg.      195.87 us (0.00 sec); median        727,415 cycles,    176x:    128,025,040 cycles
+Verifying..          avg.     2826.98 us (0.00 sec); median     10,896,727 cycles,      1x:     10,896,727 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-haraka-192f simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+thash                avg.        0.34 us (0.00 sec); median          1,263 cycles,      1x:          1,263 cycles
+Generating keypair.. avg.     2473.86 us (0.00 sec); median      9,004,841 cycles,      1x:      9,004,841 cycles
+  - WOTS pk gen..    avg.      291.44 us (0.00 sec); median      1,092,519 cycles,      8x:      8,740,152 cycles
+Signing..            avg.    74346.65 us (0.07 sec); median    277,015,260 cycles,      1x:    277,015,260 cycles
+  - FORS signing..   avg.    14859.08 us (0.01 sec); median     55,324,504 cycles,      1x:     55,324,504 cycles
+  - WOTS pk gen..    avg.      292.80 us (0.00 sec); median      1,093,792 cycles,    176x:    192,507,392 cycles
+Verifying..          avg.     3744.28 us (0.00 sec); median     13,999,694 cycles,      1x:     13,999,694 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-haraka-128s simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+thash                avg.        0.36 us (0.00 sec); median          1,280 cycles,      1x:          1,280 cycles
+Generating keypair.. avg.   102056.76 us (0.10 sec); median    385,328,276 cycles,      1x:    385,328,276 cycles
+  - WOTS pk gen..    avg.      192.79 us (0.00 sec); median        726,180 cycles,    512x:    371,804,160 cycles
+Signing..            avg.   811770.78 us (0.81 sec); median  3,078,078,832 cycles,      1x:  3,078,078,832 cycles
+  - FORS signing..   avg.    97543.81 us (0.10 sec); median    368,611,875 cycles,      1x:    368,611,875 cycles
+  - WOTS pk gen..    avg.      193.88 us (0.00 sec); median        725,819 cycles,   3584x:  2,601,335,296 cycles
+Verifying..          avg.      954.52 us (0.00 sec); median      3,349,415 cycles,      1x:      3,349,415 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
+Benchmarking sphincs-haraka-192s simple using ref
+make: Entering directory '/home/lwk/sphincsplus/ref'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+thash                avg.        0.34 us (0.00 sec); median          1,256 cycles,      1x:          1,256 cycles
+Generating keypair.. avg.   152593.53 us (0.15 sec); median    575,757,578 cycles,      1x:    575,757,578 cycles
+  - WOTS pk gen..    avg.      290.03 us (0.00 sec); median      1,093,545 cycles,    512x:    559,895,040 cycles
+Signing..            avg.  1545327.94 us (1.55 sec); median  5,845,207,917 cycles,      1x:  5,845,207,917 cycles
+  - FORS signing..   avg.   479182.12 us (0.48 sec); median  1,806,743,067 cycles,      1x:  1,806,743,067 cycles
+  - WOTS pk gen..    avg.      294.85 us (0.00 sec); median      1,092,576 cycles,   3584x:  3,915,792,384 cycles
+Verifying..          avg.     1363.35 us (0.00 sec); median      5,189,128 cycles,      1x:      5,189,128 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/lwk/sphincsplus/ref'
+
